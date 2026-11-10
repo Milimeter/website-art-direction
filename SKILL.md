@@ -22,7 +22,23 @@ When the user calls part of an existing site basic, inspect that part in context
 
 On a public page, choose a signature beat when the content supports it. Show an action and its result in a product demo, or use a change in scale or crop to reveal portfolio work. In an app, use restrained motion to communicate what changed, such as a panel opening from its trigger, a row moving after reordering, or a save completing in place. Keep frequent actions immediate. Make the resting frame meaningful and preserve the same content, controls, and state feedback with reduced motion.
 
-Use the project's own components, tokens, and animation stack where they fit. Add a specialist workflow only when it solves a specific need, such as a scripted demo, a complex gesture, or a focused accessibility audit.
+## Use the specialists
+
+Use this skill as the entry point. Read the relevant installed specialist's SKILL.md before making the decisions it covers. Follow the brief and project design system where guidance overlaps. Report which specialists informed the result.
+
+| Work | Specialist and when to use it |
+| --- | --- |
+| New or materially redesigned marketing page | Use Taste Skill (`design-taste-frontend`) before choosing the concept. Apply its art direction and image guidance. Use its browser checker when the runtime and project support it. |
+| Compare visual directions | Use Oil UI for side-by-side options. For targeted enhancements, keep variants within the requested section and compare them with the current version. |
+| Meaningful motion | Use Emil Kowalski's `emil-design-eng` for motion decisions and his `animate` playbook for substantial new interactions. Use `review-animations` when explicitly invoked. |
+| Focused quality issue on an existing interface | Use Impeccable after the visual direction is settled. Choose the smallest relevant pass, such as critique for hierarchy, audit for accessibility or responsive issues, or polish for details. |
+| Components for a React app | When the project uses Astryx, consult its docs or CLI for APIs, theming, and patterns. Consider it for a new React 19+ app when choosing the stack is in scope. Keep the established library for a scoped enhancement. |
+
+### Setup and availability
+
+Use the Codex skill installer to install [Oil UI](https://github.com/oil-oil/oil-ui) from its repository root, [Taste Skill](https://github.com/Leonxlnx/taste-skill) from `skills/taste-skill`, and [Emil's skills](https://github.com/emilkowalski/skills) from `skills/emil-design-eng`, `skills/animate`, and `skills/review-animations`. [Impeccable](https://github.com/pbakaus/impeccable) is a separate Codex skill. [Astryx](https://github.com/meta/astryx) is a project dependency. Follow its setup guide and the project's package manager when the project adopts it.
+
+If a specialist is missing, continue with this workflow and report the gap. Combine overlapping visual checks where their coverage is equivalent.
 
 ## Review in the browser
 
